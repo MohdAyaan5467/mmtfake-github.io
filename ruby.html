@@ -1,0 +1,325 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Learn Ruby - Coding PathWay
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            margin-left: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #d1d5db;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section.text-center {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        section.text-center h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        section.text-center p {
+            color: #4b5563;
+        }
+        .content-section {
+            margin-bottom: 3rem;
+        }
+        .content-section h3 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .content-section p {
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        .flowchart {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .flowchart img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .flowchart img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .video-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .video-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 0.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .video-section iframe:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        footer .container {
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #d1d5db;
+        }
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+        .accordion-header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .accordion-header:hover {
+            background-color: #1e40af;
+        }
+        .accordion-content {
+            background-color: white;
+            color: #4b5563;
+            padding: 1rem;
+            display: none;
+        }
+        .accordion-content p {
+            margin: 0;
+        }
+  </style>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+            const headers = document.querySelectorAll('.accordion-header');
+            headers.forEach(header => {
+                header.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+  </script>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <h1>
+     Coding PathWay
+    </h1>
+    <nav>
+     <ul>
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="FAQs.html">
+        FAQs
+       </a>
+      </li>
+      <li>
+       <a href="contactus.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <section class="text-center">
+    <h2>
+     Learn Ruby
+    </h2>
+    <p>
+     Master Ruby for web development with Ruby on Rails and more.
+    </p>
+   </section>
+   <section class="content-section">
+    <h3>
+     What is Ruby?
+    </h3>
+    <p>
+     Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Ruby is often used for web development, particularly with the Ruby on Rails framework, which makes it easy to build and deploy web applications quickly.
+    </p>
+    <p>
+     Ruby is known for its flexibility and ease of use, making it a popular choice for both beginners and experienced developers. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+    </p>
+   </section>
+   <section class="flowchart">
+    <h3>
+     How to Learn Ruby
+    </h3>
+    <img alt="Flowchart showing the steps to learn Ruby: Basics, Object-Oriented Programming, Advanced Ruby, Frameworks, and Tools" height="600" src="https://storage.googleapis.com/a1aa/image/3od4kfWNdoxbRqEjjfDe9ZUmw6JhItBNVqc3SFGYF09fd1fdC.jpg" width="800"/>
+   </section>
+   <section class="video-section">
+    <h2>
+     Introduction to Ruby
+    </h2>
+    <iframe allowfullscreen="" src="https://www.youtube.com/embed/your-video-id" title="Introduction to Ruby">
+    </iframe>
+   </section>
+   <section class="accordion">
+    <div class="accordion-item">
+     <div class="accordion-header">
+      Basics of Ruby
+     </div>
+     <div class="accordion-content">
+      <p>
+       Start with the basics of Ruby, including variables, data types, operators, and control structures. Understanding these fundamentals is crucial for building more complex applications.
+      </p>
+     </div>
+    </div>
+    <div class="accordion-item">
+     <div class="accordion-header">
+      Object-Oriented Programming
+     </div>
+     <div class="accordion-content">
+      <p>
+       Learn the principles of object-oriented programming (OOP) in Ruby, including classes, objects, inheritance, polymorphism, and encapsulation. OOP is a key concept in Ruby development.
+      </p>
+     </div>
+    </div>
+    <div class="accordion-item">
+     <div class="accordion-header">
+      Advanced Ruby
+     </div>
+     <div class="accordion-content">
+      <p>
+       Explore advanced Ruby topics such as exception handling, file I/O, metaprogramming, and concurrency. These skills are important for building robust and efficient applications.
+      </p>
+     </div>
+    </div>
+    <div class="accordion-item">
+     <div class="accordion-header">
+      Frameworks and Tools
+     </div>
+     <div class="accordion-content">
+      <p>
+       Get familiar with popular Ruby frameworks and tools like Ruby on Rails, Sinatra, and RSpec. These tools help you build complex and efficient applications with less code.
+      </p>
+     </div>
+    </div>
+    <div class="accordion-item">
+     <div class="accordion-header">
+      Advanced Topics
+     </div>
+     <div class="accordion-content">
+      <p>
+       Dive into advanced topics such as performance optimization, testing, and security. These skills are important for building robust and scalable applications.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    <p>
+     © 2024 Coding PathWay. All rights reserved.
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,327 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Consultation Website for Coding Paths
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            margin-left: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #d1d5db;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section.text-center {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        section.text-center h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        section.text-center p {
+            color: #4b5563;
+        }
+        section.grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            section.grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            section.grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .card p {
+            color: #4b5563;
+            margin-top: 0.5rem;
+        }
+        .card a {
+            color: #2563eb;
+            text-decoration: none;
+            display: block;
+            margin-top: 1rem;
+            transition: color 0.3s;
+        }
+        .card a:hover {
+            color: #1e40af;
+        }
+        footer {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        footer .container {
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #d1d5db;
+        }
+        .background-image {
+            background-image: url('https://placehold.co/1920x1080');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 0;
+            color: white;
+            text-align: center;
+        }
+        .background-image h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .background-image p {
+            font-size: 1.25rem;
+        }
+        .video-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .video-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 0.5rem;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <h1>
+     Coding PathWay
+    </h1>
+    <nav>
+     <ul>
+      <li>
+       <a href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="FAQs.html">
+        FAQs
+       </a>
+      </li>
+      <li>
+       <a href="contactus.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <div class="background-image">
+   <h2>
+    Welcome to Coding PathWay
+   </h2>
+   <p>
+    Your journey to mastering coding starts here.
+   </p>
+  </div>
+  <main>
+   <section class="text-center">
+    <h2>
+     Choose Your Coding Path
+    </h2>
+    <p>
+     Get expert consultation on different programming languages and frameworks.
+    </p>
+   </section>
+   <section class="video-section">
+    <h2>
+     Introduction to Coding Languages
+    </h2>
+    <iframe allowfullscreen src="https://www.youtube.com/embed/BqfPgJwlUqY
+    " title="Introduction to Coding Languages">
+    </iframe>
+   </section>
+   <section class="grid">
+    <div class="card">
+     <img alt="Illustration of a person coding in Python" height="200" src="https://storage.googleapis.com/a1aa/image/BrFHNBaHhuZOCJ1nBHcgvTsz48VBHYzzhCzBuCu06uxB9e3JA.jpg" width="300"/>
+     <h3>
+      Python
+     </h3>
+     <p>
+      Learn Python for web development, data science, and more.
+     </p>
+     <a href="python.html">
+      Learn More
+     </a>
+    </div>
+    <div class="card">
+     <img alt="Illustration of a person coding in JavaScript" height="200" src="https://storage.googleapis.com/a1aa/image/Jzy8F3OzRU6vL9R6QsT7Whzm1iBklv5jXlnGUBBf2vYF693JA.jpg" width="300"/>
+     <h3>
+      JavaScript
+     </h3>
+     <p>
+      Master JavaScript for front-end and back-end development.
+     </p>
+     <a href="js.html">
+      Learn More
+     </a>
+    </div>
+    <div class="card">
+     <img alt="Illustration of a person coding in Java" height="200" src="https://storage.googleapis.com/a1aa/image/3Hjo9sDheU3TBaphpezyecbl9eQB9VzdeCrwsbCEU6Ndhee3JA.jpg" width="300"/>
+     <h3>
+      Java
+     </h3>
+     <p>
+      Get proficient in Java for enterprise-level applications.
+     </p>
+     <a href="java.html">
+      Learn More
+     </a>
+    </div>
+    <div class="card">
+     <img alt="Illustration of a person coding in C#" height="200" src="https://storage.googleapis.com/a1aa/image/5hta4wudlDI3H5biOKRYG6ZHHlAzkQc3xJc6tJWfFINE693JA.jpg" width="300"/>
+     <h3>
+      C#
+     </h3>
+     <p>
+      Learn C# for game development and enterprise solutions.
+     </p>
+     <a href="cc.html">
+      Learn More
+     </a>
+    </div>
+    <div class="card">
+     <img alt="Illustration of a person coding in Ruby" height="200" src="https://storage.googleapis.com/a1aa/image/lAcZofVeGeTF6pcs44AFR4eQAver9wDJOPx6Ze4qfsL7E693JA.jpg" width="300"/>
+     <h3>
+      Ruby
+     </h3>
+     <p>
+      Master Ruby for web development with Ruby on Rails.
+     </p>
+     <a href="ruby.html">
+      Learn More
+     </a>
+    </div>
+    <div class="card">
+     <img alt="Illustration of a person coding in PHP" height="200" src="https://storage.googleapis.com/a1aa/image/tXYUD5CPlMbkLFO66Au2FeDf80OgdCMhV12aB5Ha5X9M07vTA.jpg" width="300"/>
+     <h3>
+      PHP
+     </h3>
+     <p>
+      Learn PHP for server-side scripting and web development.
+     </p>
+     <a href="php.html">
+      Learn More
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    <p>
+     © 2024 Coding PathWay. All rights reserved.
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

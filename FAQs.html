@@ -1,0 +1,229 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   FAQs - Coding PathWay
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            margin-left: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #d1d5db;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section.text-center {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        section.text-center h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        section.text-center p {
+            color: #4b5563;
+        }
+        .faq-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            transition: color 0.3s;
+        }
+        .faq-item h3:hover {
+            color: #2563eb;
+        }
+        .faq-item p {
+            color: #4b5563;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        footer {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        footer .container {
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #d1d5db;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <h1>
+     Coding PathWay
+    </h1>
+    <nav>
+     <ul>
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="FAQs.html">
+        FAQs
+       </a>
+      </li>
+      <li>
+       <a href="contactus.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <section class="text-center">
+    <h2>
+     Frequently Asked Questions
+    </h2>
+    <p>
+     Find answers to the most common questions about our services.
+    </p>
+   </section>
+   <section class="faq-section">
+    <div class="faq-item">
+     <h3>
+      What is Coding PathWay?
+     </h3>
+     <p>
+      Coding PathWay is a platform that provides expert consultation on different programming languages and frameworks to help you choose the best path for your coding journey.
+     </p>
+    </div>
+    <div class="faq-item">
+     <h3>
+      How can I get started with a consultation?
+     </h3>
+     <p>
+      You can get started by visiting our Services page and selecting the programming language or framework you are interested in. From there, you can book a consultation session with one of our experts.
+     </p>
+    </div>
+    <div class="faq-item">
+     <h3>
+      What programming languages do you offer consultations for?
+     </h3>
+     <p>
+      We offer consultations for a variety of programming languages including Python, JavaScript, Java, C#, Ruby, and PHP.
+     </p>
+    </div>
+    <div class="faq-item">
+     <h3>
+      Are the consultations free?
+     </h3>
+     <p>
+      We offer both free and paid consultation sessions. The details of each session, including the cost, will be provided on the Services page.
+     </p>
+    </div>
+    <div class="faq-item">
+     <h3>
+      How can I contact support?
+     </h3>
+     <p>
+      You can contact our support team by visiting the Contact page and filling out the contact form. We will get back to you as soon as possible.
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    <p>
+     © 2024 Coding PathWay. All rights reserved.
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+  </script>
+ </body>
+</html>
